@@ -1,8 +1,17 @@
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 * {
   box-sizing: border-box;
+}
+.thin{
+  font-weight: 100;
+}
+.light{
+  font-weight: 300;
+}
+.regular{
+  font-weight: 400;
 }
 a {
   color: #333;
@@ -13,6 +22,7 @@ a {
 .menu-container {
   margin: 0 auto;
   background: #e9e9e9;
+  font-size: 1.2em;
 }
 .menu a.logo {
     display: inline-block;
