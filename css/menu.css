@@ -1,39 +1,3 @@
-/*paleta de colores */
-/*153D6F*/
-/*0B4E7F*/
-/*124275*/
-/*0A5184*/
-/*0B5183*/
-
-
-
-
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #09BBFF;
-  color:white;
-}
-.center{
-  text-align: center;
-}
-* {
-  box-sizing: border-box;
-}
-.thin{
-  font-weight: 100;
-}
-.light{
-  font-weight: 300;
-}
-.regular{
-  font-weight: 400;
-}
-.logo-text{
-  font-size: 1.4em;
-}
-a {
-  color: white;
-}
 
 .menu {
     width: 100%;
