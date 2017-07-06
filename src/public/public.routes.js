@@ -6,9 +6,13 @@
   /**
   * Configures the routes and the views
   */
-  routeConfig.$inject = ['$stateProvider'];
+  routeConfig.$inject = ['$stateProvider','$urlRouterProvider'];
 
-  function routeConfig($stateProvider) {
+  function routeConfig($stateProvider,$urlRouterProvider) {
+    //default route
+    $urlRouterProvider.otherwise("/");
+    //pretty urls
+    $locationProvider.html5Mode(true);
     //Routes
     $stateProvider
     .state('public', {
