@@ -14,8 +14,22 @@
 	<link rel="stylesheet" type="text/css" href="./css/font.css">
 
 
+	<!-- Libs -->
+	<script src="lib/jquery-2.1.4.min.js"></script>
+	<script src="lib/bootstrap.min.js"></script>
+	<script src="lib/angular.min.js"></script>
+	<script src="lib/angular-ui-router.min.js"></script>
+
+	<!-- Main App Module -->
+	<script src="src/acera.module.js"></script>
+
+	<!-- Public Module -->
+	<script src="src/public/public.module.js"></script>
+	<script src="src/public/public.routes.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+
 </head>
-<body ng-app"acera">
+<body ng-app"acera" ng-strict-di>
 
 	<!-- menu -->
 	<div class="light menu-container">
@@ -85,32 +99,14 @@
 	  </div>
 	</div>
 	<!-- ./menu -->
-
+	<a ui-sref="/one"><p>holaaa</p></a>
 	<!-- main content -->
 	<main>
-		<ui-view></ui-view>
+		<ui-view>
+		</ui-view>
 	</main>
+
 	<!--./main content -->
-
-
-
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-  	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script src="https://use.fontawesome.com/be36c20b93.js"></script>
-	<script type="text/javascript" src="./js/main.js"></script>
-
-
-	<script src="lib/angular.min.js"></script>
-	<script src="lib/angular-ui-router.min.js"></script>
-
-	<!-- Main Restaurant Module -->
-	<script src="src/acera.module.js"></script>
-
-	<!-- Public Module -->
-	<script src="src/public/public.module.js"></script>
-	<script src="src/public/public.routes.js"></script>
-	<script src="src/public/menu/menu.controller.js"></script>
 
 
 </body>

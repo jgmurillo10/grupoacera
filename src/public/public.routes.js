@@ -6,11 +6,9 @@
   /**
   * Configures the routes and the views
   */
-  routeConfig.$inject = ['$stateProvider','$urlRouterProvider'];
-
-  function routeConfig($stateProvider,$urlRouterProvider) {
-    //default route
-    $urlRouterProvider.otherwise("/");
+  routeConfig.$inject = ['$stateProvider'];
+  function routeConfig($stateProvider) {
+    console.log('routeConfig');
     //pretty urls
     $locationProvider.html5Mode(true);
     //Routes
@@ -21,6 +19,10 @@
     })
     .state('public.home', {
       url: '/',
+      templateUrl:'src/public/home/home.tpl.html'
+    })
+    .state('one',{
+      url: '/one',
       templateUrl:'src/public/home/home.tpl.html'
     });
 
