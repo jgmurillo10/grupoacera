@@ -6,11 +6,11 @@
   /**
   * Configures the routes and the views
   */
-  routeConfig.$inject = ['$stateProvider'];
-  function routeConfig($stateProvider) {
+  routeConfig.$inject = ['$stateProvider', '$locationProvider'];
+  function routeConfig($stateProvider, $locationProvider) {
     console.log('routeConfig');
     //pretty urls
-    $locationProvider.html5Mode(true);
+    //$locationProvider.html5Mode(true);
     //Routes
     $stateProvider
     .state('public', {
