@@ -20,3 +20,16 @@ body {
 a {
   color: white;
 }
+
+.home_banner_container {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.home_banner {
+  width: 1000px;
+}
