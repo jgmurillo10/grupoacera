@@ -5,7 +5,7 @@
 .menu-container {
   margin: 0 auto;
   background: #0D7AF2;
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 .menu a.logo {
     display: inline-block;
@@ -30,7 +30,7 @@
     text-decoration: inherit;
 /*--adjust as necessary--*/
     color: #000;
-    font-size: 18px;
+    font-size: 16px;
     padding-right: 0.5em;
     position: absolute;
     top: 10px;
@@ -58,7 +58,7 @@ a:link{
   position: relative;
   /* IF .menu position=relative -> ul = container width, ELSE ul = 100% width */
   box-sizing: border-box;
-      clear: right;
+  clear: right;
 }
 .menu > ul:before,
 .menu > ul:after {
@@ -74,6 +74,7 @@ a:link{
   padding: 0;
   margin: 0;
 }
+
 .menu > ul > li a {
   text-decoration: none;
   padding: 1.5em 3em;
@@ -82,6 +83,12 @@ a:link{
 .menu > ul > li:hover {
   background: #496CF2;
   color: white;
+}
+.menu > ul > li:hover > ul {
+  /*border: solid black 1px;*/
+  border-bottom: solid #0D7AF2 1px;
+  border-left: solid #0D7AF2 1px;
+  border-right: solid #0D7AF2 1px;
 }
 .menu > ul > li > ul {
   display: none;
@@ -94,14 +101,17 @@ a:link{
   margin: 0;
   list-style: none;
   box-sizing: border-box;
+
 }
 .menu > ul > li > ul:before,
 .menu > ul > li > ul:after {
   content: "";
   display: table;
+
 }
 .menu > ul > li > ul:after {
   clear: both;
+
 }
 .menu > ul > li > ul > li {
   margin: 0;
@@ -119,7 +129,8 @@ a:link{
   border-bottom: 1px solid #ccc;
 }
 .menu > ul > li > ul > li a:hover{
-    color:lightgrey;
+    color: #0D7AF2;
+
 }
 .menu > ul > li > ul > li > ul {
   display: block;
@@ -162,7 +173,12 @@ a:link{
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
 Mobile style's
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media only screen and (max-width: 959px) {
+@media only screen and (max-width : 1160px) {
+  .menu-container {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 1052px) {
   .menu-container {
     width: 100%;
   }
