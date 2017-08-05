@@ -170,6 +170,12 @@ a:link{
   border: 0;
   padding: 1em 0;
 }
+.menu_title{
+  font-family: Roboto, sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 5px;
+}
+
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
 Mobile style's
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

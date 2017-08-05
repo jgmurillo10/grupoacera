@@ -13,6 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
 	<link rel="stylesheet" type="text/css" href="./css/menu.css">
 	<link rel="stylesheet" type="text/css" href="./css/font.css">
+	<link rel="stylesheet" type="text/css" href="./css/about.css">
 	<link rel="stylesheet" type="text/css" href="./css/animate.css">
 
 
@@ -31,85 +32,86 @@
 	<script type="text/javascript" src="./js/main.js"></script>
 
 </head>
-<body ng-app="acera" ng-strict-di>
+	<body ng-app="acera" ng-strict-di>
 
-	<!-- menu -->
-	<div class="light menu-container">
-	  <div class="menu">
-	    <a href="#" class="logo">
-	    	<!-- <img src="./img/logo-sin-fondo.png" width="67px"> -->
-	    	<div class="regular"></div>
-	    </a>
-	    <ul class="clearfix">
-	      <li><a ui-sref="public.home">Inicio</a></li>
-	      <li><a ui-sref="#">Acerca de Nosotros</a>
-	        <ul>
-	          <li><a ui-sref="public.about.who">¿Quiénes somos?</a>
-				<ul>
-	          		<li><img src="http://placehold.it/200x150" alt=""></li>
-	          	</ul>
-	          </li>
-	          <li><a ui-sref="public.about.mision">Misión</a>
-	          	<ul>
-	          		<li><img src="http://placehold.it/200x150" alt=""></li>
-	          	</ul>
-	          </li>
-	          <li><a ui-sref="public.about.vision">Visión</a>
-				<ul>
-	          		<li><img src="http://placehold.it/200x150" alt=""></li>
-	          	</ul>
-	          </li>
-	          <li><a ui-sref="public.about.politica">Política de gestión integral</a>
-	            <ul>
-	              <li><a ui-sref="#">Valores</a></li>
-	              <li><a ui-sref="#">Organigrama</a></li>
-	            </ul>
-	          </li>
-	        </ul>
-	      </li>
-	      <li><a ui-sref="#">Proyectos</a>
-	        <ul>
-	          <li><a ui-sref="public.projects.civil">Ingeniería Civil</a></li>
-	          <li><a ui-sref="public.projects.electrical">Ingeniería Eléctrica</a></li>
-	          <li><a ui-sref="public.projects.systems">Ingeniería Sistemas</a></li>
-	        </ul>
-	      </li>
-	      <li><a ui-sref="#">Servicios</a>
-	        <ul>
-	          <li><a ui-sref="public.services.electrical">Consultoría en Ingeniería Eléctrica</a>
-	            <ul>
-	              <li><a ui-sref="#">Suministros eléctricos</a></li>
-	              <li><a ui-sref="#">Montajes electromecánicos</a></li>
-	              <li><a ui-sref="#">Suministro y montaje en telecomunicaciones</a></li>
-	            </ul>
-	          </li>
-	          <li><br><br><img src="http://placehold.it/200x150" alt=""></li>
-	          <li><a ui-sref="public.services.civil">Consultoría en Ingeniería Civil</a>
-	            <ul>
-	              <li><a ui-sref="#">Obras civiles hidráulicas</a></li>
-	              <li><a ui-sref="#">Obras sanitarias y de urbanismo</a></li>
-	              <li><a ui-sref="#">Obras institucionales</a></li>
-	              <li><a ui-sref="#">Obras civiles de transporte</a></li>
-	            </ul>
-	          </li>
-	          <li><br><br><img src="http://placehold.it/200x150" alt=""></li>
+		<!-- menu -->
+		<div class="light menu-container">
+		  <div class="menu">
+		    <a href="#" class="logo">
 
-	        </ul>
-	      </li>
-	      <li><a ui-sref="contact">Contacto</a></li>
-	    </ul>
-	  </div>
-	</div>
-	<!-- ./menu -->
-	<!-- main content -->
-	<main>
-		<!-- ui view  -->
-		<ui-view>
-		</ui-view>
-	</main>
+		    	<div class="regular">
+						<div class="menu_title">GRUPO ACERA</div>
+		    	</div>
+		    </a>
+		    <ul class="clearfix">
+		      <li><a ui-sref="public.home">Inicio</a></li>
+		      <li><a ui-sref="#">Acerca de Nosotros</a>
+		        <ul>
+		          <li><a ui-sref="public.about.who">¿Quiénes somos?</a>
+					<ul>
+		          		<li><img src="http://placehold.it/200x150" alt=""></li>
+		          	</ul>
+		          </li>
+		          <li><a ui-sref="public.about.mision">Misión</a>
+		          	<ul>
+		          		<li><img src="http://placehold.it/200x150" alt=""></li>
+		          	</ul>
+		          </li>
+		          <li><a ui-sref="public.about.vision">Visión</a>
+					<ul>
+		          		<li><img src="http://placehold.it/200x150" alt=""></li>
+		          	</ul>
+		          </li>
+		          <li><a ui-sref="public.about.politica">Política de gestión integral</a>
+		            <ul>
+		              <li><a ui-sref="#">Valores</a></li>
+		              <li><a ui-sref="#">Organigrama</a></li>
+		            </ul>
+		          </li>
+		        </ul>
+		      </li>
+		      <li><a ui-sref="#">Proyectos</a>
+		        <ul>
+		          <li><a ui-sref="public.projects.civil">Ingeniería Civil</a></li>
+		          <li><a ui-sref="public.projects.electrical">Ingeniería Eléctrica</a></li>
+		          <li><a ui-sref="public.projects.systems">Ingeniería Sistemas</a></li>
+		        </ul>
+		      </li>
+		      <li><a ui-sref="#">Servicios</a>
+		        <ul>
+		          <li><a ui-sref="public.services.electrical">Consultoría en Ingeniería Eléctrica</a>
+		            <ul>
+		              <li><a ui-sref="#">Suministros eléctricos</a></li>
+		              <li><a ui-sref="#">Montajes electromecánicos</a></li>
+		              <li><a ui-sref="#">Suministro y montaje en telecomunicaciones</a></li>
+		            </ul>
+		          </li>
+		          <li><br><br><img src="http://placehold.it/200x150" alt=""></li>
+		          <li><a ui-sref="public.services.civil">Consultoría en Ingeniería Civil</a>
+		            <ul>
+		              <li><a ui-sref="#">Obras civiles hidráulicas</a></li>
+		              <li><a ui-sref="#">Obras sanitarias y de urbanismo</a></li>
+		              <li><a ui-sref="#">Obras institucionales</a></li>
+		              <li><a ui-sref="#">Obras civiles de transporte</a></li>
+		            </ul>
+		          </li>
+		          <li><br><br><img src="http://placehold.it/200x150" alt=""></li>
 
-	<!--./main content -->
+		        </ul>
+		      </li>
+		      <li><a ui-sref="contact">Contacto</a></li>
+		    </ul>
+		  </div>
+		</div>
+		<!-- ./menu -->
+		<!-- main content -->
+		<main>
+			<!-- ui view  -->
+			<ui-view>
+			</ui-view>
+		</main>
 
+		<!--./main content -->
 
-</body>
+	</body>
 </html>
