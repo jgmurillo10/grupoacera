@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!-- Google Fonts: Roboto, Lato and Raleway -->
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
 	<link rel="stylesheet" type="text/css" href="./css/menu.css">
 	<link rel="stylesheet" type="text/css" href="./css/font.css">
@@ -31,6 +32,7 @@
 	<script src="src/public/public.routes.js"></script>
 	<script type="text/javascript" src="./js/main.js"></script>
 
+
 </head>
 	<body ng-app="acera" ng-strict-di>
 
@@ -40,26 +42,26 @@
 		    <a href="#" class="logo">
 
 		    	<div class="regular">
-						<div class="menu_title">ACERA</div>
+						<div class="menu_title">GRUPO ACERA</div>
 		    	</div>
 		    </a>
-		    <ul class="clearfix">
-		      <li><a ui-sref="public.home">Inicio</a></li>
-		      <li><a ui-sref="public.about.who">Acerca de Nosotros</a>
+		    <ul id="menu-list" class="clearfix">
+		      <li id="no-drop"><a ui-sref="public.home">Inicio</a></li>
+		      <li><a href="#">Acerca de Nosotros</a>
 		        <ul>
 		          <li><a ui-sref="public.about.who">¿Quiénes somos?</a>
 					<ul>
-		          		<li><img src="http://placehold.it/200x150" alt=""></li>
+		          		<li class="hidden-xs"><img src="http://placehold.it/200x150" alt=""></li>
 		          	</ul>
 		          </li>
 		          <li><a ui-sref="public.about.mision">Misión</a>
 		          	<ul>
-		          		<li><img src="http://placehold.it/200x150" alt=""></li>
+		          		<li class="hidden-xs"><img src="http://placehold.it/200x150" alt=""></li>
 		          	</ul>
 		          </li>
 		          <li><a ui-sref="public.about.vision">Visión</a>
 					<ul>
-		          		<li><img src="http://placehold.it/200x150" alt=""></li>
+		          		<li class="hidden-xs"><img src="http://placehold.it/200x150" alt=""></li>
 		          	</ul>
 		          </li>
 		          <li><a ui-sref="public.about.politica">Política de gestión integral</a>
@@ -70,14 +72,14 @@
 		          </li>
 		        </ul>
 		      </li>
-		      <li><a ui-sref="public.projects.civil">Proyectos</a>
+		      <li><a href="#">Proyectos</a>
 		        <ul>
 		          <li><a ui-sref="public.projects.civil">Ingeniería Civil</a></li>
 		          <li><a ui-sref="public.projects.electrical">Ingeniería Eléctrica</a></li>
 		          <li><a ui-sref="public.projects.systems">Ingeniería Sistemas</a></li>
 		        </ul>
 		      </li>
-		      <li><a ui-sref="public.services.electrical">Servicios</a>
+		      <li><a href="#">Servicios</a>
 		        <ul>
 		          <li><a ui-sref="public.services.electrical">Consultoría en Ingeniería Eléctrica</a>
 		            <ul>
@@ -86,7 +88,7 @@
 		              <li><a ui-sref="#">Suministro y montaje en telecomunicaciones</a></li>
 		            </ul>
 		          </li>
-		          <li><br><br><img src="http://placehold.it/200x150" alt=""></li>
+		          <li class="hidden-xs"><br><br><img src="http://placehold.it/200x150" alt=""></li>
 		          <li><a ui-sref="public.services.civil">Consultoría en Ingeniería Civil</a>
 		            <ul>
 		              <li><a ui-sref="#">Obras civiles hidráulicas</a></li>
@@ -95,11 +97,11 @@
 		              <li><a ui-sref="#">Obras civiles de transporte</a></li>
 		            </ul>
 		          </li>
-		          <li><br><br><img src="http://placehold.it/200x150" alt=""></li>
+		          <li class="hidden-xs"><br><br><img src="http://placehold.it/200x150" alt=""></li>
 
 		        </ul>
 		      </li>
-		      <li><a ui-sref="contact">Contacto</a></li>
+		      <li id="no-drop"><a ui-sref="contact">Contacto</a></li>
 		    </ul>
 		  </div>
 		</div>

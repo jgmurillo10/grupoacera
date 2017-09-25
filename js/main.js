@@ -11,15 +11,27 @@ $(document).ready(function() {
       });
       $(".menu > ul > li").click(function() {
         if ($(window).width() <= 943) {
-          $(this).children("ul").fadeToggle(150);
+          $(this).children("ul").fadeToggle(300);
         }
+        console.log($('.menu > ul > li'));
+        if ($('.menu > ul > li > ul:not(:has(ul))') ){
+        }
+
+      });
+      $('.menu > ul > li#no-drop').click(function () {
+        $(".menu > ul").removeClass('show-on-mobile');
+      });
+      $(".menu > ul > li > ul > li").click(function () {
+        $(".menu > ul").removeClass('show-on-mobile', 1000);
       });
       $(".menu-mobile").click(function(e) {
-        $(".menu > ul").toggleClass('show-on-mobile');
+        $(".menu > ul").toggleClass('show-on-mobile',1000);
         e.preventDefault();
       });
+
     });
     $(window).resize(function() {
+      console.log('resize');
       $(".menu > ul > li").children("ul").hide();
       $(".menu > ul").removeClass('show-on-mobile');
     });

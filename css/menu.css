@@ -173,7 +173,7 @@ a:link{
 .menu_title{
   font-family: Roboto, sans-serif;
   font-size: 1.2em;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -185,6 +185,9 @@ Mobile style's
   }
 }
 @media only screen and (max-width: 1052px) {
+  .menu a.logo {
+    width: 85%;
+  }
   .menu-container {
     width: 100%;
   }
@@ -195,7 +198,8 @@ Mobile style's
     display: block;
     position: relative;
     float: right;
-    padding: 20px 20px 0;
+    padding: 2em 1.5em 0;
+    margin-top: 0.5em;
   }
   .menu-dropdown-icon:before {
     display: block;
@@ -237,5 +241,11 @@ Mobile style's
   }
   .menu .show-on-mobile {
     display: block;
+    transition: all 1s;
+  }
+  .menu_title{
+    font-family: Roboto, sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 0px;
   }
 }

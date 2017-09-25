@@ -25,3 +25,8 @@ h1 {
   font-size: 2em;
   background-color: rgba(0,0,100,0.2);
 }
+@media only screen and (max-width: 1052px) {
+	.title_about {
+	  font-size: 2em;
+	}
+}
