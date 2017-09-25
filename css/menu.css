@@ -6,11 +6,12 @@
   margin: 0 auto;
   background: #0D7AF2;
   font-size: 1.1em;
+  height: 8.5vh;
 }
 .menu a.logo {
     display: inline-block;
     padding: 1.5em 3em;
-    width: 19%;
+    width: 25%;
     float: left;
 }
 .menu img {
@@ -47,8 +48,6 @@ a:link{
   cursor: pointer;
   float: right;
   padding: 1.5em 2em;
-  /*background:;*/
-  /*color: ;*/
 }
 .menu > ul {
   margin: 0 auto;
@@ -179,12 +178,12 @@ a:link{
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
 Mobile style's
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media only screen and (max-width : 1160px) {
+@media only screen and (max-width : 1400px) {
   .menu-container {
     font-size: 1em;
   }
 }
-@media only screen and (max-width: 1052px) {
+@media only screen and (max-width: 1321px) {
   .menu-container {
     width: 100%;
   }
@@ -237,5 +236,11 @@ Mobile style's
   }
   .menu .show-on-mobile {
     display: block;
+  }
+  .menu a.logo {
+      display: inline-block;
+      padding: 1em 1.5em;
+      width: 80%;
+      float: left;
   }
 }
