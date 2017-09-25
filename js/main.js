@@ -13,7 +13,6 @@ $(document).ready(function() {
         if ($(window).width() <= 943) {
           $(this).children("ul").fadeToggle(300);
         }
-        console.log($('.menu > ul > li'));
         if ($('.menu > ul > li > ul:not(:has(ul))') ){
         }
 
@@ -31,7 +30,6 @@ $(document).ready(function() {
 
     });
     $(window).resize(function() {
-      console.log('resize');
       $(".menu > ul > li").children("ul").hide();
       $(".menu > ul").removeClass('show-on-mobile');
     });
