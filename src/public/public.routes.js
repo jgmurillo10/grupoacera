@@ -65,17 +65,47 @@
       abstract: true,
       templateUrl: 'src/public/services/services.tpl.html'
     })
-    .state('public.services.electrical', {
-      url: '/services/electrical',
-      templateUrl: 'src/public/services/electrical.tpl.html'
+    .state('public.services.electricalConsulting', {
+      url: '/services/electricalConsulting',
+      templateUrl: 'src/public/services/electricalConsulting.tpl.html'
     })
-    .state('public.services.civil', {
-      url: '/services/civil',
-      templateUrl: 'src/public/services/civil.tpl.html'
+    .state('public.services.electricalProjects', {
+      url: '/services/electricalProjects',
+      templateUrl: 'src/public/services/electricalProjects.tpl.html'
     })
-    .state('public.services.systems', {
-      url: '/services/systems',
-      templateUrl: 'src/public/services/systems.tpl.html'
+    .state('public.services.electricalSupplies', {
+      url: '/services/electricalSupplies',
+      templateUrl: 'src/public/services/electricalSupplies.tpl.html'
+    }).state('public.services.electromechanic', {
+      url: '/services/electromechanic',
+      templateUrl: 'src/public/services/electromechanic.tpl.html'
+    })
+    .state('public.services.telco', {
+      url: '/services/telco',
+      templateUrl: 'src/public/services/telco.tpl.html'
+    })
+    .state('public.services.civilConsulting', {
+      url: '/services/civilConsulting',
+      templateUrl: 'src/public/services/civilConsulting.tpl.html'
+    }).state('public.services.civilHidro', {
+      url: '/services/civilHidro',
+      templateUrl: 'src/public/services/civilHidro.tpl.html'
+    })
+    .state('public.services.urbanProjects', {
+      url: '/services/urbanProjects',
+      templateUrl: 'src/public/services/urbanProjects.tpl.html'
+    })
+    .state('public.services.institutionalProjects', {
+      url: '/services/institutionalProjects',
+      templateUrl: 'src/public/services/institutionalProjects.tpl.html'
+    })
+    .state('public.services.civilTransport', {
+      url: '/services/civilTransport',
+      templateUrl: 'src/public/services/civilTransport.tpl.html'
+    })
+    .state('public.customers', {
+      url: '/customers',
+      templateUrl:'src/public/customers/customers.tpl.html'
     });
 
   }
