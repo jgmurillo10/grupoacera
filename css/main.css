@@ -62,3 +62,12 @@ a {
 .home_banner {
   width: 1000px;
 }
+.customers {
+
+
+}
+.customer-img {
+	margin: 0 auto;
+	height: 20vh;
+	/*border: 1px solid black;*/
+}
