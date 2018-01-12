@@ -69,6 +69,10 @@
       url: '/services/electricalConsulting',
       templateUrl: 'src/public/services/electricalConsulting.tpl.html'
     })
+    .state('public.services.fotocopy', {
+      url: '/services/electricalConsulting',
+      templateUrl: 'src/public/services/fotocopy.tpl.html'
+    })
     .state('public.services.electricalProjects', {
       url: '/services/electricalProjects',
       templateUrl: 'src/public/services/electricalProjects.tpl.html'
