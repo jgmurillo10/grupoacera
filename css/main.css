@@ -75,16 +75,54 @@ a {
 	top: 0;
 	left: 0;
 } */
-.home_banner_background {
-	background-image: url("../img/membrana.jpg");
-	background-size:100%;
-	opacity: 1;
- top: 0;
- left: 0;
- bottom: 0;
- right: 0;
- position: absolute;
- z-index: -1;
+
+@media (min-width: 376px) {
+	.home_banner_background {
+		background-image: url("../img/membrana.jpg");
+		background-size:100%;
+		opacity: 1;
+	 top: 0;
+	 left: 0;
+	 bottom: 0;
+	 right: 0;
+	 position: absolute;
+	 z-index: -1;
+	}
+}
+@media (max-width: 376px) {
+	.home_banner_container {
+	  height: 80vh;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+		position: relative;
+		top:0;
+		left: 0;
+
+
+	}
+
+	.home_banner {
+	  width: 50%;
+		/* border: 1px solid white; */
+	}
+
+	.home_banner_background {
+		background-image: url("../img/membrana.jpg");
+		background-size:300%;
+		opacity: 1;
+	 top: -10;
+	 left: -100;
+	 /*bottom: 0;
+	 right: 0; */
+	 /* position: absolute; */
+	 /* z-index: -1; */
+
+	width: 100%;
+ 	min-height: 100vh;
+ 	/* background-attachment: fixed; */
+	}
 }
 .customers {
 
