@@ -54,20 +54,48 @@ a {
   height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
+	position: relative;
+	top: 35%;
+	left: 24%;
 
 }
 
 .home_banner {
-  width: 1000px;
+  width: 30%;
+}
+.home_banner_background {
+
+}
+/* .img-back {
+	z-index: -9999;
+	position: relative;
+	opacity: 1;
+	top: 0;
+	left: 0;
+} */
+.home_banner_background {
+	background-image: url("../img/membrana.jpg");
+	background-size:100%;
+	opacity: 1;
+ top: 0;
+ left: 0;
+ bottom: 0;
+ right: 0;
+ position: absolute;
+ z-index: -1;
 }
 .customers {
 
 
 }
+
 .customer-img {
 	margin: 0 auto;
 	height: 20vh;
 	/*border: 1px solid black;*/
+}
+.fotocopy {
+	margin: 2em;
 }
